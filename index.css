@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://media.istockphoto.com/id/514914078/photo/coffee-cup-and-notebook-with-to-do-list-planning-concept.jpg?b=1&s=612x612&w=0&k=20&c=JVjRL-OOX8AGyj2OlAIHF9OynEgKQXzRnX86bQ_PoPQ=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.container {
+  max-width: 550px;
+  margin: 20px auto;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.input-container button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #45a049;
+}
+
+.input-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+#highPriorityContainer,
+#lowPriorityContainer {
+  border-radius: 5px;
+  height: 200px;
+  width: 90%;
+  overflow-y: auto;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: transparent;
+}
+
+#highPriorityContainer {
+  border: 3px solid black;
+  background: linear-gradient(to right, pink, skyblue);
+}
+
+#lowPriorityContainer {
+  border: 3px solid black;
+  background: linear-gradient(to right, pink, skyblue);
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.todo-item input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item label {
+  font-size: 16px;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+}
+
+.delete-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+#deadlineInput {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
